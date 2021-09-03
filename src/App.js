@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react';
-
 import s from './App.module.css';
-
 import Searchbar from './component/Searchbar';
 import PreLoader from './component/PreLoader';
 import Modal from './component/Modal';
 import ImageGallery from './component/ImageGallery';
 import LoadMore from './component/LoadMore';
-
 import fetchDataApi from './services/fetchDataApi';
 
 function App() {

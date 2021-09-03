@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { createPortal } from 'react-dom';
+// import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
 import s from './Modal.module.css';
 
@@ -26,11 +26,11 @@ function Modal({ onClose, children }) {
     }
   };
 
-  return createPortal(
-    <div className={s.overlay} onClick={handleOverlayClick}>
+  return (
+    <div className={s.overlay} onClick={handleOverlayClick} id={rootModal}>
       <div className={s.modal}> {children}</div>
-    </div>,
-    rootModal,
+    </div>
+    
   );
 }
 
